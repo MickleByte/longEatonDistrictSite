@@ -1,0 +1,58 @@
+{
+    "1st Breaston": {
+        "beavers": {
+            "1st Breaston Beavers": {
+                "meetingDay": "Friday",
+                "meetingStartTime": "18:00",
+                "meetingEndTime": "19:15",
+                "meetingLat": "",
+                "meetingLong": "",
+                "meetingLocationDesc": ""
+            }
+        }
+    },
+    "1st Draycott and Wilne": {
+        "beavers": {
+            "1st Draycott and Wilne Beavers": {
+                "meetingDay": "Tuesday",
+                "meetingStartTime": "18:00",
+                "meetingEndTime": "19:15",
+                "meetingLat": "",
+                "meetingLong": "",
+                "meetingLocationDesc": ""
+            }
+        }
+    },
+    "3rd Long Eaton": {
+        "beavers": {
+            "3rd Long Eaton Beavers": {
+                "meetingDay": "Wednesday",
+                "meetingStartTime": "17:30",
+                "meetingEndTime": "18:45",
+                "meetingLat": "52.905102",
+                "meetingLong": "-1.283339",
+                "meetingLocationDesc": "St Johns on College Street"
+            }
+        }
+    },
+    "15th Long Eaton": {
+        "beavers": {
+            "15th Long Eaton Beavers 1": {
+                "meetingDay": "Tuesday",
+                "meetingStartTime": "18:00",
+                "meetingEndTime": "19:15",
+                "meetingLat": "52.889250",
+                "meetingLong": "-1.280849",
+                "meetingLocationDesc": "Sea Scout hut on Tamworth Rd"
+            },
+            "15th Long Eaton Beavers 2": {
+                "meetingDay": "Wednesday",
+                "meetingStartTime": "18:15",
+                "meetingEndTime": "19:30",
+                "meetingLat": "52.889250",
+                "meetingLong": "-1.280849",
+                "meetingLocationDesc": "Sea Scout hut on Tamworth Rd"
+            }
+        }
+    }
+}

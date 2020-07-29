@@ -1,0 +1,519 @@
+@import url("colours.css");
+
+    html,
+    body {
+        padding: 0;
+        margin:0;
+        height: 100%;
+    }
+
+    .central{
+        text-align: center;
+    }
+
+    .backGroundImage{
+        background: 
+          linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url(../Assets/group-of-scouts-in-helmets-jpg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .imageTextBig{
+        font-size:xx-large;
+    }
+
+
+    #googleMap{
+        width:90%;
+        height:400px;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:15px;
+    }
+
+    .centerText{
+        margin-top:30px; 
+        text-align: center;
+        color: white; /* default supported fallback style */
+        color: var(--scoutWhite);
+        background-color: #00a794; /* default supported fallback style */
+        background-color: var(--scoutTeal)
+    
+    }
+
+    .centerText.purple{
+        margin-top:30px; 
+        text-align: center;
+        color: white; /* default supported fallback style */
+        color: var(--scoutWhite);
+        background-color: #00a794; /* default supported fallback style */
+        background-color: var(--scoutPurple);
+    
+    }
+
+    .imageTextBig {
+        padding-top:12%;
+        color: #FFFFFF; /* default fallback style (for IE) */
+        color: var(--scoutWhite);
+        text-align: center;
+      }
+
+    a{
+        text-decoration: none;
+    }
+    
+    * {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    .header {
+        background-color: white; /* default supported fallback style */
+        background-color: var(--scoutWhite);
+        padding-bottom: 10px;
+        border-bottom: 2px solid #7413DC; /* default supported fallback style */
+        border-bottom: 2px solid var(--scoutPurple);
+        margin-bottom: 5px;
+    }
+
+    section{
+        width:100%;
+        padding-top: 5px;
+        padding-bottom:5px;
+    }
+
+    .menuItem{
+        text-decoration: none;
+        padding-right:10px;
+        display:block;
+    }
+
+
+    .tableContainer{
+        overflow-x:auto;
+    }
+
+    #footerLinks{
+        overflow:auto;
+    }
+
+    #safeguarding{
+        width:100%;
+        display:block;
+        text-align: center;
+    }
+
+    #contactFooter{
+        width:40%;
+        float:left;
+        padding-right:20px;
+        padding-left:10px;
+    }
+
+    #websitesFooter{
+        width:40%;
+        float:right;
+        padding-right:10px;
+    }
+
+
+
+    #BurgerMenuButton {
+        padding: 15px;
+    }
+
+
+    /*Mobile*/
+    @media only screen and (max-width: 768px) {
+
+        section.largeText{
+            padding-left:5px;
+            padding-right:5px;
+        }
+
+        .pageTitle{
+            text-align: center;
+            font-size:xx-large;
+        }
+
+        .navbar{
+            overflow: hidden;
+            background-color: #FFFFFF; /* default supported fallback style */
+            background-color: var(--scoutWhite);
+            display:none;
+        }
+
+        #BurgerMenuButton {
+            float: right;
+            width: 50px;
+        }
+
+        .bigImage{
+            width: 100%;
+        }
+
+        .bigVideo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:100%;
+            height: 20rem
+        }
+
+          
+          .menuItem{
+            float:left;
+            width:100%;
+            color: #7413DC; /* default supported fallback style */
+            color: var(--scoutPurple);
+            text-decoration: none;
+          }
+          
+          
+          .dropbtn {
+            padding:0;
+            margin:0;
+            color: #7413DC; /* default supported fallback style */
+            color: var(--scoutPurple);
+            text-decoration: none;
+            border: none;
+            font-size:medium;
+            background-color: #FFFFFF; /* default supported fallback style */
+            background-color: var(--scoutWhite);
+          }
+          
+          
+          
+          .dropdown-content a {
+            float: left;
+            width:90%;
+            padding-left:10%;
+            display: block;
+            text-align: left;
+          }
+
+
+    }
+
+    /*Desktop*/
+
+    @media only screen and (min-width: 768px) {
+        #BurgerMenuButton {
+            display: none;
+        }
+
+        section.largeText{
+            width:70%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        .pageTitle{
+            padding-left:15px;
+            font-size:xx-large;
+        }
+
+        .bigImage{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 55%;
+        }
+
+        .bigVideo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:auto;
+            height: auto;
+        }
+
+        .navbar {
+            padding-left:15px;
+            overflow: hidden;
+            background-color: #7413DC; /* default fallback style (for IE) */
+            background-color: var(--scoutWhite);
+        }
+          
+          .navbar a {
+            float: left;
+            color: #7413DC; /* default fallback style (for IE) */
+            color: var(--scoutPurple);
+            text-decoration: none;
+          }
+          
+          .dropdown {
+            float: left;
+            overflow: hidden;
+          }
+          
+          .dropbtn {
+            color: #7413DC;/* default supported fallback style */
+            color: var(--scoutPurple);
+            text-decoration: none;
+            border: none;
+            font-size:medium;
+            background-color: '#FFFFFF'; /* default supported fallback style */
+            background-color: var(--scoutWhite);
+          }
+          
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            float: none;
+            padding: 12px 16px;
+            display: block;
+            text-align: left;
+          }
+          
+          .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+
+        p{
+            padding-left: 15px;
+        }
+
+    }
+
+    .button {
+        padding: .3rem .5rem;
+        font-weight: 700;
+        text-decoration: none;
+        background-color: white; /* default supported fallback style */
+        background-color: var(--scoutWhite);
+        color: #7413DC; /* default supported fallback style */
+        color: var(--scoutPurple);
+        border: 2px solid #7413DC; /* default supported fallback style */
+        border: 2px solid var(--scoutPurple);
+    }
+
+    .button:hover {
+        cursor: pointer;
+        background-color: #7413DC; /* default supported fallback style */
+        background-color: var(--scoutPurple);
+        color: white; /* default supported fallback style */
+        color: var(--scoutWhite);
+    }
+
+    .largeButton {
+        font-size: xx-large;
+        display: block;
+        margin-top:10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .titleImage{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+        width: 300px;
+    }
+
+    a.purple {
+        color: #7413DC; /* default supported fallback style */
+        color: var(--scoutPurple);
+        cursor: pointer;
+    }
+
+    a.purple:hover {
+        color: #000000; /* default supported fallback style */
+        color: var(--scoutBlack);
+    }
+
+    p.green{
+        color: #00a794; /* default supported fallback style */
+        color: var(--scoutTeal);
+    }
+
+    a.green {
+        color: #00a794; /* default supported fallback style */
+        color: var(--scoutTeal);
+        cursor: pointer;
+    }
+
+    a.green:hover {
+        color: #000000; /* default supported fallback style */
+        color: var(--scoutBlack);
+    }
+
+    a.black {
+        color: #000000; /* default supported fallback style */
+        color: var(--scoutBlack);
+        cursor: pointer; 
+    }
+
+    a.black.inText {
+        text-decoration: underline;
+    }
+
+    a.black.inText:hover {
+        text-decoration: none;
+        color: #000000; /* default supported fallback style */
+        color: var(--scoutBlack);
+    }
+
+    a.black:hover {
+        color: #7413DC; /* default supported fallback style */
+        color: var(--scoutPurple);
+    }
+
+    .white{
+        color: white; /* default supported fallback style */
+        color: var(--scoutWhite);
+    }
+
+    a.white {
+        color: white; /* default supported fallback style */
+        color: var(--scoutWhite);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    a.white:hover {
+        text-decoration: none;
+    }
+
+    .footerBottom {
+        background-color: #7413DC; /* default supported fallback style */
+        background-color: var(--scoutPurple);
+        padding: 10px;
+    }
+
+    .socialMediaLink {
+        text-decoration: none;
+        display: inline-block;
+        margin:0 1% 0 1%;
+    }
+
+    .socialMedia {
+        text-align: center;
+        margin-left: auto;
+        margin-right:auto;
+        width: 50%;
+    }
+
+    .footerTop {
+        background-color: #00a794; /* default supported fallback style */
+        background-color: var(--scoutTeal);
+        padding: 10px;
+    }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #logoImage {
+        width: 200px;
+    }
+
+    #websitesFooter p{
+        padding:0;
+        margin:0;
+        padding-bottom: 5px;
+    }
+
+    #page-container {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    #content-wrap {
+        padding-bottom: 2.5rem;
+        /* Footer height */
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        /* Footer height */
+    }
+
+
+    .collapsible {
+        background-color: #7413DC; /* default supported fallback style */
+        background-color: var(--scoutPurple);
+        color: #FFFFFF; /* default fallback style (for IE) */
+        color: var(--scoutWhite);
+        cursor: pointer;
+        width: 90%;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+        border: none;
+        text-align: left;
+        outline: none;
+        margin-top:1px;
+      }
+      
+      
+      .content {
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+        width:90%;
+        display: none;
+        overflow: hidden;
+        background-color: #F5F5F5; /* default fallback style (for IE) */
+        background-color: var(--scoutLightGrey);
+      }
+    
+    
+      .colonyName{
+          float:left;
+      }
+    
+    
+      .plus{
+          float: right;
+          padding-right:10px;
+       }
+    
+    
+    
+       /* For mobile phones: */
+    @media only screen and (max-width: 768px) {
+    
+        .collapsible {
+            width: 100%;
+            margin-left:5px;
+            margin-right:5px;
+            
+        }
+          
+          
+        .content {
+            
+            width:100%;
+            margin-left:5px;
+            margin-right:5px;
+        }
+        
+    }

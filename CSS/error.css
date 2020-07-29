@@ -1,0 +1,22 @@
+.centerTitle{
+    text-align: center
+}
+
+.backGroundImage{
+    background: 
+    linear-gradient(
+        rgba(100, 99, 99, 0.5),
+        rgba(90, 89, 89, 0.5)
+        ),
+    url(../Assets/ConnorMugshot.PNG);
+    background-size: contain;
+    /* object-fit: cover; */
+    height: 50vh;
+}
+
+
+.imageTextBig{
+    padding-top:10%;
+    color: #FFFFFF; /* default fallback style (for IE) */
+    color: var(--scoutWhite)
+}

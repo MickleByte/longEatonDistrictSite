@@ -1,0 +1,73 @@
+@import url("colours.css");
+
+.vid{
+	display: block;
+	margin: 0 auto;
+	height: 50px;
+}
+
+.SectionBlock
+	{
+		background-color: #7413DC; /* default supported fallback style */
+        background-color: var(--scoutPurple);
+    }
+    
+#sectionList{
+	background-color: #7413DC; /* default supported fallback style */
+    background-color: var(--scoutPurple);
+    text-align: center;
+    overflow:auto;
+    padding-bottom: 10px;
+}
+
+
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    .SectionBlock
+	{
+		width: 20%;
+		height: 25%;
+		float:left;
+	}
+
+	#socialMediaWrapper{
+		text-align: center;
+        margin-left: auto;
+        margin-right:auto;
+        width: 90%;
+	}
+
+	.socialFeed{
+        display: inline-block;
+		margin:0 1% 0 1%;
+		width: 40%;
+	}
+
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+
+	.SectionBlock
+	{
+		width: 50%;
+		float:center;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+
+	.socialFeed{
+		margin-left: auto;
+		margin-right: auto;
+		width: 99%;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+
+	#socialMediaWrapper{
+		width: 100%;
+	}
+	
+}
