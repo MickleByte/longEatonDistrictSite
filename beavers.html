@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- Developed For Long Eaton Scout District -->
+<!-- By Matthew Micklewright -->
+<!-- Last Updated January 2020 -->
+<html lang="en-GB">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <!--Get Font 'Nunito Sans'-->
+    <link rel="stylesheet" type="text/css" href="CSS/siteWideStyle.css">
+    <link rel="stylesheet" type="text/css" href="CSS/beavers.css">
+    <link rel='icon' href='Assets/favicon.ico' type='image/x-icon' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- <meta name="google-site-verification" content=""/>     -->
+    <meta name="keywords" content="Long Eaton, Long Eaton District, Beavers, Long Eaton District Beavers, Sawley, Breaston, Sandiacre">
+    <meta name="robots" content="index, follow">
+    <title>Beavers</title>
+</head>
+
+<script src="JS/maps.js"></script>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header class="header">
+                <a href="index.html">
+                    <img width="250" alt="Scouts Logo" src="Assets/LELogo.gif"
+                        id="logoImage" />             
+                </a>
+                <input type="image" src="Assets/BurgerMenuPurple.svg" id="BurgerMenuButton" onclick="displayMenu()" />
+                <br>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <a href="index.html" class="purple menuItem">Home</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="events.html" class="purple menuItem">Events</a>
+                    </div>  
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="join.html" class="purple menuItem">Join</a></button>
+                        <div class="dropdown-content">
+                            <a class="black" href="beavers.html">Beavers</a>
+                            <a class="black" href="cubs.html">Cubs</a>
+                            <a class="black" href="scouts.html">Scouts</a>
+                            <a class="black" href="explorers.html">Explorers</a>
+                            <a class="black" href="network.html">Network</a>
+                            <a class="black" href="volunteer.html">Volunteers</a>     
+                        </div>
+                    </div>
+                   
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="contact.html" class="purple menuItem">Contact</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="black"  href="contact.html#whosWho">Who's Who</a class="black">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <script type="text/javascript">
+                function displayMenu() {
+                    var items = document.getElementsByClassName("navbar");
+                    for (i = 0; i < items.length; i++) {
+                        if (items[i].style.display === "block") {
+                            items[i].style.display = "none";
+                        } else {
+                            items[i].style.display = "block";
+                        }
+                    }
+                }
+            </script>
+
+            <section>
+                <img class="titleImage" src="Assets/beavers-logo-multi-colour-jpg.jpg"/>
+            </section>
+
+
+            <section class="backGroundImage">
+                <div class="imageTextBig">
+                    <h1>Try New Things</h1>
+                    <h1>Make Friends</h1>
+                  </div>
+            </section>
+
+            
+            
+            <section class="largeText">
+                <p class="black">Beavers are young people aged 6 to 8 who:</p>
+                <ul>
+                    <li>Master new skills and try new things</li>
+                    <li>Have fun and go on adventures</li>
+                    <li>Make Friends</li>
+                    <li>Are curious abou the world around them</li>
+                    <li>Help others and make a difference, on thier own doorsteps and beyond</li>
+                </ul>
+                <p>Every week, they gather in groups called <strong>Beaver Colonies</strong> to hop, skip and jump their way through lots of different games and activities - achieving anything they set their minds to, and having lots of fun along the way.</p>
+            </section>
+
+            <section>
+                <div id="map">
+
+                    <div id="googleMap"></div>
+
+
+
+                </div>
+
+                <div id="1stBreastonBeavers">
+                    <button type="button" class="collapsible">
+                        <p class="colonyName">1st Breaston</p> 
+                        <p class="plus">+</p>
+                    </button>
+                    
+                    <div class="content">
+                        <p>Meetings are on a Thursday from 6pm to 7:15pm at...</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <button type="button" class="collapsible">
+                        <p class="colonyName">1st Draycott and Wilne</p> 
+                        <p class="plus">+</p>
+                    </button>
+                    
+                    <div class="content">
+                        <p>Meetings are on a Tuesday from 6pm to 7:15pm at...</p>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="collapsible">
+                        <p class="colonyName">3rd Long Eaton</p> 
+                        <p class="plus">+</p>
+                    </button>
+                    
+                    <div class="content">
+                        <p>Meetings are held at St John on College street between 5:30pm and 6:45pm on Tuesdays</p>
+                        <button onclick="hideAllMarkers()" class="button mapCntrlBtn">Show on Map</button>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="collapsible">
+                        <p class="colonyName">15th Long Eaton</p> 
+                        <p class="plus">+</p>
+                    </button>
+                    
+                    <div class="content">
+                        <p>Meetings are on Wednesday evenings between 6:15pm and 7:30pm at the Sea Scout hut on Tamworth Road</p>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="collapsible">
+                        <p class="colonyName">16th Long Eaton</p> 
+                        <p class="plus">+</p>
+                    </button>
+                    
+                    <div class="content">
+                        <p>Meetings are held on a Thursday between 5:45pm and 6:45pm on Station Road, Long Eaton</p>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="collapsible">
+                        <p class="colonyName">17th Long Eaton</p> 
+                        <p class="plus">+</p>
+                    </button>
+                    
+                    <div class="content">
+                        <p>We meet at the back of St Francis Church on Tamworth Road from 6:15pm until 7:15pm every Wednesday</p>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="collapsible">
+                        <p class="colonyName">3rd Sandiacre</p> 
+                        <p class="plus">+</p>
+                    </button>
+                    
+                    <div class="content">
+                        <p>Meetings are on a Monday from 5:30pm until 6:30pm</p>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="collapsible">
+                        <p class="colonyName">1st Sawley</p> 
+                        <p class="plus">+</p>
+                    </button>
+                    
+                    <div class="content">
+                        <p>Beaver meetings are on a Wednesday behind the chip shop on Beresford road, 6:30pm until 7:45pm. Or there is a meeting at Dovedale School from 6pm until 7:15pm on Thursdays</p>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="collapsible">
+                        <p class="colonyName">1st Trent College</p> 
+                        <p class="plus">+</p>
+                    </button>
+                    
+                    <div class="content">
+                        <p>Meetings are on a Tuesday but unfortunatley these are only available for students at the school</p>
+                    </div>
+                </div>
+            </section>
+            
+
+
+        </div>
+
+
+        <footer id="footer" class="footer">
+            <div class="footerTop">
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/LEScouts/" class="socialMediaLink">
+                        <img src="Assets/facebook.svg" />
+                    </a>
+                    <a href="https://www.youtube.com/user/UKScoutAssociation" class="socialMediaLink">
+                        <img src="Assets/youtube.svg" />
+                    </a>
+                    <a href="https://www.instagram.com/scouts/" class="socialMediaLink">
+                        <img src="Assets/instagram.svg" />
+                    </a>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <img width="110" height="80" class="logo" alt="Scouts Logo" style="float: center"
+                    src="Assets/Scouts_Logo_Stack_White.png" />
+                <br>
+                <section id="footerLinks">
+                    <div id="contactFooter">
+                        <p class="white">
+                            <p class="white">To speak to the district team:</p>
+                            <ul>
+                                <li class="white"><a class="white" href="mailto:whatever@gmail.com">Email:</a>
+                                    whatever@<wbr>email.com</li>
+                                <li class="white">Phone: 0115 1234567</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <a href="privacy.html" class="white">Privacy Policy</a>
+                        </p>
+                        
+                    </div>
+                    <div id="websitesFooter">
+                        <p class="white">Some Handy Links:</p>
+                        <a class="white" href="https://www.scouts.org.uk/">National Scouts</a> <br>
+                        <a class="white" href="derbyshirescouts.org">Derbyshire Scouts</a><br>
+                        <a class="white" href="https://www.drumhill.org.uk/">Drum Hill Campsite</a><br>
+                        <a class="white" href="http://www.trentlock.org/">Trent Lock Activity Centre</a><br>
+                        <a class="white" href="https://shop.scouts.org.uk/">Scout Store</a>
+                    </div>
+                </section>
+                <br>
+                <div id="safeguarding">
+                    <p class="white">If you have safeguarding concerns, contact Scouting's safeguarding team:
+                        <a href="mailto:safeguarding@scouts.org.uk" class="white">
+                            safeguarding@scouts.org.uk
+                        </a>
+                    </p>
+                    <br>
+                    <a href="https://www.ceop.police.uk/safety-centre/"><img style="height: 50px; width: 144px;"
+                            src="Assets/CEOP.png" /></a>
+                    <br>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+
+
+<script src="JS/collapsables.js"></script>
+    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4UWX6vUm7l4k6po5zoEmSTHZu_4ysyL8&callback=initMap"></script>
+
+</html>
