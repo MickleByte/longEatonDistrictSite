@@ -1,106 +1,60 @@
 @import url("colours.css");
-#whosWho{
-    background-color: white; /* default supported fallback style */
-    background-color: var(--scoutWhite);
-    text-align: center;
-    overflow:auto;
-    padding-bottom: 10px;
+
+
+html {
+  box-sizing: border-box;
 }
 
-#whosWhoWrapper p{
-    padding:0;
-    margin:0;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.centerText{
-  margin-bottom: 10px;
+#whosWhoWrapper{
+  padding-top: 10px;
+  display: block;
 }
 
-.headShot{
-    opacity: 1;
-    display: block;
-    width: 90%;
-    height: 50vh;
-    overflow: hidden;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    object-fit: contain;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:2px;
-    display:block;
+.column {
+  width: 100%;
+  display: block;
+  padding: 0 8px;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
+.container p, .container h2{
+  padding-left: 1px;
+}
 
-.container {
-    width:100%;
-    display: inline-block;
-  }
-  
-  
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    margin-right:auto;
-    margin-left:auto;
-    width:20%;
-    transform: translate(25%, -100%);
-    text-align: center;
-  }
-  
-  .container:hover .image {
-    opacity: 0.3;
-  }
-  
-  .container:hover .middle {
-    opacity: 1;
-  }
-  
-  .text {
-    width:100%;
-    background-color: #00A794; /* default fallback style (for IE)*/
-    background-color: var(--scoutTeal);
-    color: #FFFFFF; /* default fallback style (for IE)*/
-    color: var(--scoutWhite);
-    padding:1px;
-  }
+.jobTitle {
+  color: var(--scoutDarkGrey);
+}
 
+.clear { 
+  clear:both; 
+}
 
-/* For desktop: */
-@media only screen and (min-width: 768px) {
-    #whosWhoWrapper{
-        width:100%;
-        margin:auto;
-    }
-
-    .whosWhoIndividual
-	{
-    width:30%;
-    display: inline-block;
-    margin:0 1% 0 1%;
-    margin-bottom: 40px;
-	}
+/* Big mobile */
+@media only screen and (min-width: 480px) {
+  .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
 }
 
 
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
 
-	.whosWhoIndividual
-	{
-		width: 100%;
-		margin-bottom: 30px;
+/* Large Desktop */
+@media only screen and (min-width: 1024px) {
+  .column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
   }
-  
-  .middle{
-    width:80%;
-    transform: translate(11%, -100%);
-  }
-
-  .headShot{
-    height:40vh;
-  }
-	
 }
+
