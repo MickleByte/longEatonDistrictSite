@@ -1,218 +1,28 @@
-<!DOCTYPE html >
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <title>Creating a Store Locator on Google Maps</title>
-  <style>
-    /* Always set the map height explicitly to define the size of the div
-     * element that contains the map. */
-    #map {
-      height: 100%;
-    }
-    /* Optional: Makes the sample page fill the window. */
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
- </style>
-  </head>
-  <body style="margin:0px; padding:0px;" onload="initMap()">
-    <div>
-         <label for="raddressInput">Search location:</label>
-         <input type="text" id="addressInput" size="15"/>
-        <label for="radiusSelect">Radius:</label>
-        <select id="radiusSelect" label="Radius">
-          <option value="50" selected>50 kms</option>
-          <option value="30">30 kms</option>
-          <option value="20">20 kms</option>
-          <option value="10">10 kms</option>
-        </select>
+<html>
 
-        <input type="button" id="searchButton" value="Search Near Me"/>
-    </div>
-    <div><select id="locationSelect" style="width: 10%; visibility: hidden"></select></div>
-    <div id="map" style="width: 100%; height: 90%"></div>
-    <script>
-      var map;
-      var markers = [];
-      var infoWindow;
-      var locationSelect;
-
-        function initMap() {
-          console.log("Init Map Fired");
-          var centerLoc = {lat: 52.8988094, lng: -1.2728836}; // center for map start location can be set here (currently Long Eaton)
-          var centerZoom = 13; // zoom level for map start location can be set here
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: centerLoc,
-            zoom: centerZoom,
-            mapTypeId: 'roadmap',
-            mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU}
-          });
-          infoWindow = new google.maps.InfoWindow();
-
-          searchButton = document.getElementById("searchButton").onclick = searchNearMe;
-
-          locationSelect = document.getElementById("locationSelect");
-          locationSelect.onchange = function() {
-            var markerNum = locationSelect.options[locationSelect.selectedIndex].value;
-            if (markerNum != "none"){
-              google.maps.event.trigger(markers[markerNum], 'click');
-            }
-          };
-        }
-
-        function searchNearMe(){
-            // Get user location
-            var userLocation = new google.maps.LatLng(-33.812222, 151.143707); // currently use this location - getUserLocation() will be working later
-
-            var pos = {lat: -33.812222, lng: 151.143707}
-
-
-            // place pin on map of user's location
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            infoWindow.open(map);
-            // center on the user's location
-            map.setCenter(pos);
-
-            searchLocationsNear(userLocation);
-        }
-
-        function getUserLocation(){
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    var pos = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    };
-
-                    infoWindow.setPosition(pos);
-                    infoWindow.setContent('Location found.');
-                    infoWindow.open(map);
-                    map.setCenter(pos);
-                    var userLocation = new google.maps.LatLng(pos.lat, pos.lng);
-                    return userLocation;
-                }, function() {
-                    handleLocationError(true, infoWindow, map.getCenter());
-                });
-            } else {
-            // Browser doesn't support Geolocation
-            handleLocationError(false, infoWindow, map.getCenter());
-            }
-        }
-
-        function handleLocationError(browserHasGeolocation, infoWindow, pos){
-            infoWindow.setPosition(pos);
-            infoWindow.setContent(browserHasGeolocation ?
-                                'Error: The Geolocation service failed.' :
-                                'Error: Your browser doesn\'t support geolocation.');
-            infoWindow.open(map);
+<head>
+    <title>Store Locator</title>
+    <style>
+        #map {
+            height: 100%;
         }
         
-
-       function clearLocations() {
-        console.log("Clear Locations Fired");
-         infoWindow.close();
-         for (var i = 0; i < markers.length; i++) {
-           markers[i].setMap(null);
-         }
-         markers.length = 0;
-
-         locationSelect.innerHTML = "";
-         var option = document.createElement("option");
-         option.value = "none";
-         option.innerHTML = "See all results:";
-         locationSelect.appendChild(option);
-       }
-
-       function searchLocationsNear(center) {
-        
-        console.log("search locations near Fired");
-         clearLocations();
-
-         var radius = document.getElementById('radiusSelect').value;
-         var searchUrl = 'markers.xml?lat=' + center.lat() + '&lng=' + center.lng() + '&radius=' + radius;
-         downloadUrl(searchUrl, function(data) {
-           var xml = parseXml(data);
-           var markerNodes = xml.documentElement.getElementsByTagName("marker");
-           var bounds = new google.maps.LatLngBounds();
-           for (var i = 0; i < markerNodes.length; i++) {
-             var id = markerNodes[i].getAttribute("id");
-             var name = markerNodes[i].getAttribute("name");
-             var address = markerNodes[i].getAttribute("address");
-             var distance = parseFloat(markerNodes[i].getAttribute("distance"));
-             var latlng = new google.maps.LatLng(
-                  parseFloat(markerNodes[i].getAttribute("lat")),
-                  parseFloat(markerNodes[i].getAttribute("lng")));
-
-             createOption(name, distance, i);
-             createMarker(latlng, name, address);
-             bounds.extend(latlng);
-           }
-           map.fitBounds(bounds);
-           locationSelect.style.visibility = "visible";
-           locationSelect.onchange = function() {
-             var markerNum = locationSelect.options[locationSelect.selectedIndex].value;
-             google.maps.event.trigger(markers[markerNum], 'click');
-           };
-         });
-       }
-
-       function createMarker(latlng, name, address) {
-        console.log("create marker Fired");
-          var html = "<b>" + name + "</b> <br/>" + address;
-          var marker = new google.maps.Marker({
-            map: map,
-            position: latlng
-          });
-          google.maps.event.addListener(marker, 'click', function() {
-            infoWindow.setContent(html);
-            infoWindow.open(map, marker);
-          });
-          markers.push(marker);
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
         }
+    </style>
+</head>
 
-       function createOption(name, distance, num) {
-        console.log("create option Fired");
-          var option = document.createElement("option");
-          option.value = num;
-          option.innerHTML = name;
-          locationSelect.appendChild(option);
-       }
+<body>
+    <!-- The div to hold the map -->
+    <div id="map"></div>
 
-       function downloadUrl(url, callback) {
-        console.log("download URL Fired");
-          var request = window.ActiveXObject ?
-              new ActiveXObject('Microsoft.XMLHTTP') :
-              new XMLHttpRequest;
-
-          request.onreadystatechange = function() {
-            if (request.readyState == 4) {
-              request.onreadystatechange = doNothing;
-              callback(request.responseText, request.status);
-            }
-          };
-
-          request.open('GET', url, true);
-          request.send(null);
-       }
-
-       function parseXml(str) {
-        console.log("parse XML Fired");
-          if (window.ActiveXObject) {
-            var doc = new ActiveXObject('Microsoft.XMLDOM');
-            doc.loadXML(str);
-            return doc;
-          } else if (window.DOMParser) {
-            return (new DOMParser).parseFromString(str, 'text/xml');
-          }
-       }
-
-       function doNothing() {}
-  </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4UWX6vUm7l4k6po5zoEmSTHZu_4ysyL8&callback=initMap">
+    <script src="JS/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4UWX6vUm7l4k6po5zoEmSTHZu_4ysyL8&libraries=places&callback=initMap">
     </script>
-  </body>
+</body>
+
 </html>
