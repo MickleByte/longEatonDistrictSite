@@ -13,13 +13,13 @@
    
 }
 
-
 .imageTextBig{
     color: #FFFFFF; /* default supported fallback style */
     color: var(--scoutWhite)
 }
 
 
-.mapCntrlBtn{
-    float: right;
+#map{
+    height: 50vh;
+    width: 100%;
 }

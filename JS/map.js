@@ -1,4 +1,4 @@
-function initMap() {
+function initMap(sectionName) {
     // Create the map & set zoom and center location
     const map = new google.maps.Map(document.getElementById('map'), {
       zoom: 11,
@@ -6,7 +6,8 @@ function initMap() {
     });
   
     // Load the JSON with the meeting locations
-    map.data.loadGeoJson('JS/stores.json', {idPropertyName: 'storeid'});
+    var filename = `JS/mapInfo/${sectionName}.json`;
+    map.data.loadGeoJson(filename, {idPropertyName: 'storeid'});
   
     const infoWindow = new google.maps.InfoWindow();
   
@@ -19,7 +20,7 @@ function initMap() {
       const position = event.feature.getGeometry().get();
       const content = `
         <h2>${groupName}</h2><p>${description}</p>
-        <p><b>Open:</b> ${hours}<br/><b>Phone:</b> ${contact}</p>
+        <p><b>Meeting Times:</b> ${hours}<br/><b>Contact:</b> ${contact}</p>
       `;
   
       infoWindow.setContent(content);
@@ -28,3 +29,25 @@ function initMap() {
       infoWindow.open(map);
     });
   }
+
+
+  // seperate functions to load in correct JSON to init map for each section
+function beaverMap(){
+  initMap("beavers");
+}
+
+function cubMap(){
+  initMap("cubs");
+}
+
+function scoutMap(){
+  initMap("scouts");
+}
+
+function explorerMap(){
+  initMap("explorers");
+}
+
+function networkMap(){
+  initMap("network");
+}
