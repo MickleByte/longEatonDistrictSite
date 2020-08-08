@@ -14,6 +14,21 @@
                 "name": "1st Whatever",
                 "phone": "0115 934023032"
             }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.278515,
+                    52.8785158
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "7pm - 8pm",
+                "description": "Here's some text you might want to add about this group",
+                "name": "15th Whatever",
+                "phone": "0115 934023032"
+            }
         }
     ]
 }
