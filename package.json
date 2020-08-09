@@ -1,0 +1,22 @@
+{
+  "name": "scout-site",
+  "version": "1.0.0",
+  "description": "Repo for the Long Eaton Scout District Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MickleByte/longEatonDistrictSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MickleByte/longEatonDistrictSite/issues"
+  },
+  "homepage": "https://github.com/MickleByte/longEatonDistrictSite#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
