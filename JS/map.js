@@ -1,8 +1,8 @@
 function initMap(sectionName) {
     // Create the map & set zoom and center location
     const map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 11,
-      center: {lat: 52.8837101, lng: -1.2868269},
+      zoom: 12,
+      center: {lat: 52.897022, lng: -1.288115},
     });
   
     // Load the JSON with the meeting locations
@@ -14,13 +14,19 @@ function initMap(sectionName) {
     // Show the information for a marker when it's clicked.
     map.data.addListener('click', (event) => {
       const groupName = event.feature.getProperty('name');
-      const description = event.feature.getProperty('description');
+      const location = event.feature.getProperty('location');
       const hours = event.feature.getProperty('hours');
       const contact = event.feature.getProperty('phone');
       const position = event.feature.getGeometry().get();
       const content = `
-        <h2>${groupName}</h2><p>${description}</p>
-        <p><b>Meeting Times:</b> ${hours}<br/><b>Contact:</b> ${contact}</p>
+        <h2>${groupName}</h2>
+        <p><strong>Location:</strong> ${location}<br/><strong>Meeting Time:</strong> ${hours}<br/><strong>Contact:</strong> ${contact}</p>
+
+        <style>
+        strong{
+          font-weight: bold;
+        }
+        </style>
       `;
   
       infoWindow.setContent(content);

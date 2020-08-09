@@ -10,7 +10,7 @@
             "type": "Feature",
             "properties": {
                 "hours": "7pm - 8pm",
-                "description": "Here's some text you might want to add about this group",
+                "location": "Here's some text you might want to add about this group",
                 "name": "1st Whatever",
                 "phone": "0115 934023032"
             }
@@ -25,7 +25,7 @@
             "type": "Feature",
             "properties": {
                 "hours": "7pm - 8pm",
-                "description": "Here's some text you might want to add about this group",
+                "location": "Here's some text you might want to add about this group",
                 "name": "15th Whatever",
                 "phone": "0115 934023032"
             }
