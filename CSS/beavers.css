@@ -17,9 +17,3 @@
     color: #FFFFFF; /* default supported fallback style */
     color: var(--scoutWhite)
 }
-
-
-#map{
-    height: 50vh;
-    width: 100%;
-}
