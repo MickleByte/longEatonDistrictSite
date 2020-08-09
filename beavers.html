@@ -18,8 +18,6 @@
     <title>Beavers</title>
 </head>
 
-<script src="JS/maps.js"></script>
-
 <body>
     <div id="page-container">
         <div id="content-wrap">
@@ -99,117 +97,14 @@
             </section>
 
             <section>
-                <div id="map">
-
-                    <div id="googleMap"></div>
-
-
-
-                </div>
-
-                <div id="1stBreastonBeavers">
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">1st Breaston</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Meetings are on a Thursday from 6pm to 7:15pm at...</p>
-                    </div>
-                </div>
-                
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">1st Draycott and Wilne</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Meetings are on a Tuesday from 6pm to 7:15pm at...</p>
-                    </div>
-                </div>
-
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">3rd Long Eaton</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Meetings are held at St John on College street between 5:30pm and 6:45pm on Tuesdays</p>
-                        <button onclick="hideAllMarkers()" class="button mapCntrlBtn">Show on Map</button>
-                    </div>
-                </div>
-
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">15th Long Eaton</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Meetings are on Wednesday evenings between 6:15pm and 7:30pm at the Sea Scout hut on Tamworth Road</p>
-                    </div>
-                </div>
-
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">16th Long Eaton</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Meetings are held on a Thursday between 5:45pm and 6:45pm on Station Road, Long Eaton</p>
-                    </div>
-                </div>
-
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">17th Long Eaton</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>We meet at the back of St Francis Church on Tamworth Road from 6:15pm until 7:15pm every Wednesday</p>
-                    </div>
-                </div>
-
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">3rd Sandiacre</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Meetings are on a Monday from 5:30pm until 6:30pm</p>
-                    </div>
-                </div>
-
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">1st Sawley</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Beaver meetings are on a Wednesday behind the chip shop on Beresford road, 6:30pm until 7:45pm. Or there is a meeting at Dovedale School from 6pm until 7:15pm on Thursdays</p>
-                    </div>
-                </div>
-
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">1st Trent College</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Meetings are on a Tuesday but unfortunatley these are only available for students at the school</p>
-                    </div>
-                </div>
+                <section class="centerText purple">
+                    <h1>Find a group near you</h1>
+                </section>
+                <div id="map"></div>
+                <script src="JS/map.js"></script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4UWX6vUm7l4k6po5zoEmSTHZu_4ysyL8&libraries=places&callback=beaverMap">
+                </script>
             </section>
-            
-
-
         </div>
 
 
@@ -274,10 +169,5 @@
 
 
 </body>
-
-
-<script src="JS/collapsables.js"></script>
-    
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4UWX6vUm7l4k6po5zoEmSTHZu_4ysyL8&callback=initMap"></script>
 
 </html>
