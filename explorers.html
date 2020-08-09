@@ -9,11 +9,12 @@
     <!--Get Font 'Nunito Sans'-->
     <link rel="stylesheet" type="text/css" href="CSS/siteWideStyle.css">
     <link rel="stylesheet" type="text/css" href="CSS/explorers.css">
+    <link rel="stylesheet" type="text/css" href="CSS/maps.css">
     <link rel='icon' href='Assets/favicon.ico' type='image/x-icon' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <!-- <meta name="google-site-verification" content=""/>     -->
-    <meta name="keywords" content="Long Eaton, Long Eaton District, Scouts, Explorers, Long Eaton District Explorer Scouts, Sawley, Breaston, Sandiacre">
+    <meta name="keywords" content="Long Eaton, Long Eaton District, Explorers, Long Eaton District Explorers, Sawley, Breaston, Sandiacre">
     <meta name="robots" content="index, follow">
     <title>Explorers</title>
 </head>
@@ -77,46 +78,25 @@
 
             <section class="backGroundImage">
                 <div class="imageTextBig">
-                    <h1>Try more.<wbr> See more.<wbr> Do more.</h1>
+                    <h1>Take the lead,</h1>
+                    <h1>embrace change</h1>
                   </div>
             </section>
 
+            
+            
             <section class="largeText">
-                <p class="black">Explorers are a go-getting group of young people aged 14 to 18. Together, they make up the fourth section of the Scouts.</p>
-                <p>Week in and week out, they gather in groups called Units to try new things, make new friends and conquer the small task of changing the world.</p>
+                
             </section>
 
-
             <section>
-                <div id="map">
-
-                    <div id="googleMap"></div>
-
-
-
-                </div>
-
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">Colony Name</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-                
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">Colony Name</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
+                <section class="centerText purple">
+                    <h1>Find a group near you</h1>
+                </section>
+                <div id="map"></div>
+                <script src="JS/map.js"></script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4UWX6vUm7l4k6po5zoEmSTHZu_4ysyL8&libraries=places&callback=cubMap">
+                </script>
             </section>
         </div>
 
@@ -182,11 +162,5 @@
 
 
 </body>
-
-<script src="JS/collapsables.js"></script>
-
-<script src="JS/maps.js"></script>
-    
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4UWX6vUm7l4k6po5zoEmSTHZu_4ysyL8&callback=myMap"></script>
 
 </html>
