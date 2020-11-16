@@ -1,18 +1,124 @@
 {
     "type": "FeatureCollection",
-    "features": [{
+    "features": [
+        {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-1.2826646,
-                    52.8951519
+                "coordinates": [-1.302319,
+                    52.8834531
                 ]
             },
             "type": "Feature",
             "properties": {
-                "hours": "7pm - 8pm",
-                "location": "Here's some text you might want to add about this group",
-                "name": "1st Whatever",
-                "phone": "0115 934023032"
+                "hours": "Friday",
+                "location": "Behind Chip shop on Beresford Rd",
+                "name": "1st Sawley",
+                "phone": "adcscouts@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.3767122,
+                    52.8927548
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Thursday",
+                "location": "Scout HQ, Blind Lane, DE72 3DW",
+                "name": "1st Draycott & Wilne",
+                "phone": "adcscouts@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.280816,
+                    52.8891911
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Friday",
+                "location": "Sea Scout Hut on Tamworth Rd",
+                "name": "15th Long Eaton",
+                "phone": "adcscouts@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.283199,
+                    52.905022
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Friday",
+                "location": "St Johns on College street",
+                "name": "3rd Long Eaton",
+                "phone": "adcscouts@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.2889443,
+                    52.9296827
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Friday",
+                "location": "3rd Sandiacre Scout Hut",
+                "name": "3rd Sandiacre",
+                "phone": "adcscouts@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.277372,
+                    52.891568
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Friday",
+                "location": "St Francis Church, Rear building",
+                "name": "17th Long Eaton",
+                "phone": "adcscouts@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.2608114,
+                    52.8979476
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Friday",
+                "location": "Station Rd",
+                "name": "16th Long Eaton",
+                "phone": "adcscouts@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.317416,
+                    52.897222
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Monday",
+                "location": "Scout HQ, Blind Lane, DE72 3DW",
+                "name": "1st Breaston",
+                "phone": "adcscouts@longeatonscouts.org.uk"
             }
         }
     ]

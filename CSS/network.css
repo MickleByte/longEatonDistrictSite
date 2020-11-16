@@ -7,12 +7,12 @@
         url(../Assets/young-adults-jpg.jpg);
         background-size: cover;
         background-position: center;
-        height: 75vh;
+        height: 50vh;
 }
 
 
 .imageTextBig{
     color: #FFFFFF; /* default supported fallback style */
     color: var(--scoutWhite);
-    padding-top:15%;
+    padding-top:20%;
 }
