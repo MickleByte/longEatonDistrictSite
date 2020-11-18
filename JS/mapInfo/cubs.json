@@ -1,18 +1,155 @@
 {
     "type": "FeatureCollection",
-    "features": [{
+    "features": [
+        {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-1.2826646,
-                    52.8951519
+                "coordinates": [-1.2889443,
+                    52.9296827
                 ]
             },
             "type": "Feature",
             "properties": {
-                "hours": "7pm - 8pm",
-                "location": "Here's some text you might want to add about this group",
-                "name": "1st Whatever",
-                "phone": "0115 934023032"
+                "hours": "Mondays 5:30pm",
+                "location": "Stanton Rd",
+                "name": "3rd Sandiacre",
+                "phone": "adccubs@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.283199,
+                    52.905022
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Tuesday 5:30pm",
+                "location": "St John's Church Hall, Canal St.",
+                "name": "3rd Long Eaton",
+                "phone": "adccubs@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.280816,
+                    52.8891911
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Wednesday 6:30pm",
+                "location": "Sea Scout hut on Tamworth Rd",
+                "name": "15th Long Eaton",
+                "phone": "adccubs@longeatonscouts.org.uk"
+            }
+        },
+     
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.3767122,
+                    52.8927548
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Tuesday 6pm",
+                "location": "Garfield Avenue, Draycott",
+                "name": "1st Draycott and Wilne",
+                "phone": "adccubs@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.2850348,
+                    52.9012088
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "3:45pm",
+                "location": "Only available for pupils of school",
+                "name": "1st Trent College",
+                "phone": ""
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.276850,
+                    52.891266
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Monday 6:15pm",
+                "location": "St Francis Chruch, Sydney St.",
+                "name": "17th Long Eaton",
+                "phone": "adccubs@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.302319,
+                    52.8834531
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Thursday 6:00pm",
+                "location": "Dovedale Primary School, Dovedale Avenue",
+                "name": "1st Sawley (Dovedale)",
+                "phone": "adccubs@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.302319,
+                    52.8834531
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Thursday 6:30pm",
+                "location": "Scout Hut Behind Chip Shop on Beresford Rd, Sawley",
+                "name": "1st Sawley (Beresford Rd)",
+                "phone": "adccubs@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.317416,
+                    52.897222
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Thursdays 6pm",
+                "location": "Blind Lane, DE72 3DW",
+                "name": "1st Breaston",
+                "phone": "adccubs@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.2608114,
+                    52.8979476
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Thursday 5:45pm",
+                "location": "Baptist Church, Station Rd",
+                "name": "16th Long Eaton",
+                "phone": "adccubs@longeatonscouts.org.uk"
             }
         }
     ]
