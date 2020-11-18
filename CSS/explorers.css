@@ -4,10 +4,10 @@
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
         ),
-        url(../Assets/explorer-group-listening-jpg.jpg);
+        url(../Assets/muddy-explorer-group-2-jpg.jpg);
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        height: 75vh;
 }
 
 

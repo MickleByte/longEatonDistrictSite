@@ -1,0 +1,18 @@
+.backGroundImage{
+    background:  
+          linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url(../Assets/young-adults-jpg.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 75vh;
+}
+
+
+.imageTextBig{
+    color: #FFFFFF; /* default supported fallback style */
+    color: var(--scoutWhite);
+    padding-top:10%;
+}

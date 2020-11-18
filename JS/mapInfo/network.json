@@ -1,0 +1,19 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.2826646,
+                    52.8951519
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "7pm - 8pm",
+                "location": "Here's some text you might want to add about this group",
+                "name": "1st Whatever",
+                "phone": "0115 934023032"
+            }
+        }
+    ]
+}

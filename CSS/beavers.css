@@ -8,7 +8,7 @@
     background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-    height: 100vh;
+    height: 75vh;
 
    
 }
@@ -16,10 +16,4 @@
 .imageTextBig{
     color: #FFFFFF; /* default supported fallback style */
     color: var(--scoutWhite)
-}
-
-
-#map{
-    height: 50vh;
-    width: 100%;
 }

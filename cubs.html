@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <!--Get Font 'Nunito Sans'-->
     <link rel="stylesheet" type="text/css" href="CSS/siteWideStyle.css">
-    <!link rel="stylesheet" type="text/css" href="CSS/filename.css">
+    <link rel="stylesheet" type="text/css" href="CSS/cubs.css">
+    <link rel="stylesheet" type="text/css" href="CSS/maps.css">
     <link rel='icon' href='Assets/favicon.ico' type='image/x-icon' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -77,78 +78,35 @@
 
             <section class="backGroundImage">
                 <div class="imageTextBig">
-                    <h1>Big Text Here</h1>
-                    <p>Smaller Text Here</p>
+                    <h1>Master new skills,</h1>
+                    <h1>have adventures</h1>
                   </div>
             </section>
 
-            <button class="button">
-                Button
-            </button>
-
-            <br>
-
-            <button class="button largeButton">
-                Large Button
-            </button>
-
-            <br>
-
-            <a class="purple">
-                Purple link
-            </a>
-
-            <br>
-
-            <a class="green">
-                Green link
-            </a>
-
-            <br>
-
-            <a class="black">
-                Black link
-            </a>
-
-
-            <br>
-
-
-
-
-            <section>
-                <div id="map">
-
-                    <div id="googleMap"></div>
-
-
-
-                </div>
-
-
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">Colony Name</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-                
-                <div>
-                    <button type="button" class="collapsible">
-                        <p class="colonyName">Colony Name</p> 
-                        <p class="plus">+</p>
-                    </button>
-                    
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
+            
+            
+            <section class="largeText">
+                <p>Cubs are young people aged 8 to 10½ who:</p>
+                <ul>
+                    <li>Master new skills and try new things</li>
+                    <li>Have fun and go on adventures</li>
+                    <li>Make friends</li>
+                    <li>Are curious about the world around them</li>
+                    <li>Help others and make a difference, in their own communities and beyond</li>
+                </ul>
+                <p>Every week, they gather in groups called <strong>Cub Packs</strong> to take part in lots of interesting and challenging activities – achieving anything they set their minds to, and having lots of fun along the way.</p>
+                <p>If you'd like to learn more about joining a Cub pack, get in touch by emailing <a class="black inText" href="mailto:adccubs@longeatonscouts.org.uk">adccubs@longeatonscouts.org.uk</a></p>
             </section>
 
+            <section>
+                <section class="centerText purple">
+                    <h1>Find a group near you</h1>
+                </section>
+                <div id="map"></div>
+                <script src="JS/map.js"></script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4UWX6vUm7l4k6po5zoEmSTHZu_4ysyL8&libraries=places&callback=cubMap">
+                </script>
+            </section>
         </div>
 
 
@@ -175,8 +133,8 @@
                         <p class="white">
                             <p class="white">To speak to the district team:</p>
                             <ul>
-                                <li class="white"><a class="white" href="mailto:whatever@gmail.com">Email:</a>
-                                    whatever@<wbr>email.com</li>
+                                <li class="white"><a class="white" href="mailto:secretary@longeatonscouts.org.uk">Email:</a>
+                                    secretary@<wbr>longeatonscouts.org.uk</li>
                                 <li class="white">Phone: 0115 1234567</li>
                             </ul>
                         </p>
@@ -213,11 +171,5 @@
 
 
 </body>
-
-<script src="JS/collapsables.js"></script>
-
-<script src="JS/maps.js"></script>
-    
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4UWX6vUm7l4k6po5zoEmSTHZu_4ysyL8&callback=myMap"></script>
 
 </html>
