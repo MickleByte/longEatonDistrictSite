@@ -4,13 +4,14 @@
 
 .backGroundImage{
     background: 
-    linear-gradient(
-        rgba(100, 99, 99, 0.5),
-        rgba(90, 89, 89, 0.5)
-        ),
-    url(../Assets/ConnorMugshot.PNG);
-    background-size: contain;
-    /* object-fit: cover; */
+      linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(../Assets/scouts-on-raft-jpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 50vh;
 }
 

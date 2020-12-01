@@ -1,0 +1,78 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.302319,
+                    52.8834531
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Sundays 7pm - 9pm",
+                "location": "Behind Chip shop on Beresford Rd",
+                "name": "Sawley Explorers (Aitone)"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.280816,
+                    52.8891911
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Mondays 7pm - 9:30pm",
+                "location": "Sea Scout Hut on Tamworth Rd",
+                "name": "15th Long Eaton Sea Explorers (Aesir)",
+                "phone": "desc@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.277372,
+                    52.891568
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Fridays 8:30pm - 10pm",
+                "location": "St Francis Church, Rear building",
+                "name": "17th Long Eaton Explorers",
+                "phone": "desc@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.2889443,
+                    52.9296827
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Tuesdays 7pm - 9pm",
+                "location": "3rd Sandiacre Scout Hut",
+                "name": "3rd Sandiacre Explorers",
+                "phone": "desc@longeatonscouts.org.uk"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-1.317416,
+                    52.897222
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "hours": "Fridays 7pm - 9pm",
+                "location": "Scout HQ, Blind Lane, DE72 3DW",
+                "name": "(Coming Soon) Draycott and Breaston Explorers",
+                "phone": "desc@longeatonscouts.org.uk"
+            }
+        }
+    ]
+}
