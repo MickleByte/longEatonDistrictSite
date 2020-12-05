@@ -50,14 +50,14 @@
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-1.3767122,
-                    52.8927548
+                "coordinates": [ -1.346195,
+                    52.894941
                 ]
             },
             "type": "Feature",
             "properties": {
-                "hours": "Tuesday 6pm",
-                "location": "Garfield Avenue, Draycott",
+                "hours": "Wednesday 6pm",
+                "location": "Garfield Avenue, Draycott, DE72 3NP",
                 "name": "1st Draycott and Wilne",
                 "phone": "adccubs@longeatonscouts.org.uk"
             }
