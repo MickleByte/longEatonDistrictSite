@@ -19,14 +19,15 @@
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-1.3767122,
-                    52.8927548
+                "coordinates": [
+                    -1.346195,
+                    52.894941
                 ]
             },
             "type": "Feature",
             "properties": {
-                "hours": "Thursday",
-                "location": "Scout HQ, Blind Lane, DE72 3DW",
+                "hours": "Friday 7pm",
+                "location": "Garfield Avenue, Draycott, DE72 3NP",
                 "name": "1st Draycott & Wilne",
                 "phone": "adcscouts@longeatonscouts.org.uk"
             }
