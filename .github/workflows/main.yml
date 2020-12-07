@@ -14,3 +14,5 @@ jobs:
         server: ${{ secrets.domain }}
         username: ${{ secrets.user }}
         password: ${{ secrets.pass }}
+        server-dir: ./git/
+        dry-run: true
