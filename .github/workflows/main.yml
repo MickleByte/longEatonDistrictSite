@@ -15,4 +15,8 @@ jobs:
         username: ${{ secrets.user }}
         password: ${{ secrets.pass }}
         server-dir: ./git/
-        exclude: .git* package* templatePage.html README.md
+        exclude: .git*
+          - .git*/**
+          - templatePage.html
+          - README.md
+          - package*.json
