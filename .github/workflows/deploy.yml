@@ -1,0 +1,18 @@
+on:  
+  pull_request:
+    branches: [ master ]
+name: Deploy website on push
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy
+      uses: actions/deploy@v1
+      with:
+        server: ${{ secrets.domain }}
+        username: ${{ secrets.user }}
+        password: ${{ secrets.pass }}
+        protocol: ftps
+        server-dir: /git/
+        exclude: .git* .git*/** node_modules/** README.md templatePage.html package*
