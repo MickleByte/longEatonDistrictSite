@@ -14,9 +14,10 @@ jobs:
         server: ${{ secrets.domain }}
         username: ${{ secrets.user }}
         password: ${{ secrets.pass }}
-        server-dir: ./git/
+        server-dir: ./httpdocs/
         exclude: .git*
           - .git*/**
+          - .github/**
           - templatePage.html
           - README.md
           - package*.json
