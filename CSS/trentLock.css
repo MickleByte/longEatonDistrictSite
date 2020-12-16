@@ -1,0 +1,36 @@
+#map{
+    height: 50vh;
+    width: 100%;
+}
+
+.backGroundImage{
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),   
+    url(../Assets/cubs-water-activity-jpg.jpg);
+    background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    height: 75vh;
+
+   
+}
+
+
+.paraWithTitle{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px ;
+}
+
+.colouredSection.purple{
+    background-color: #7413DC; /* default supported fallback style */
+    color: var(--scoutPurple);
+}
+
+.colouredSection.white{
+    background-color: #FFFFFF; /* default supported fallback style */
+    color: var(--scoutWhite);
+}

@@ -57,3 +57,36 @@ function explorerMap(){
 function networkMap(){
   initMap("network");
 }
+
+function trentLockMap(){
+  const map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: {lat: 52.875234, lng: -1.275203},
+  });
+
+  // Load the JSON with the meeting locations
+  var filename = `JS/mapInfo/trentLock.json`;
+  map.data.loadGeoJson(filename, {idPropertyName: 'storeid'});
+
+  const infoWindow = new google.maps.InfoWindow();
+
+  // Show the information for a marker when it's clicked.
+  map.data.addListener('click', (event) => {
+    const label = "Trent Lock Scout Activity Center"
+    const position = event.feature.getGeometry().get();
+    const content = `
+      <h2>${label}</h2>
+
+      <style>
+      strong{
+        font-weight: bold;
+      }
+      </style>
+    `;
+
+    infoWindow.setContent(content);
+    infoWindow.setPosition(position);
+    infoWindow.setOptions({pixelOffset: new google.maps.Size(0, -30)});
+    infoWindow.open(map);
+  });
+}
