@@ -65,7 +65,7 @@ function trentLockMap(){
   });
 
   // Load the JSON with the meeting locations
-  var filename = `JS/mapInfo/trentLock.json`;
+  var filename = `../JS/mapInfo/trentLock.json`;
   map.data.loadGeoJson(filename, {idPropertyName: 'storeid'});
 
   const infoWindow = new google.maps.InfoWindow();
