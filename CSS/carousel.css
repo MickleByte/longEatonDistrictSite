@@ -1,0 +1,44 @@
+.carouselCard {
+    width: 100%;
+}
+
+.carouselBtn {
+    user-select: none;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: var(--scoutBlack);
+    color: var(--scoutWhite);
+}
+
+.carouselBtn:hover {
+    background-color: var(--scoutDarkGrey);
+}
+
+.carouselRightBtn {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+}
+
+.carouselLeftBtn {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+}
+
+.carouselWrapper {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+}
