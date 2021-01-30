@@ -1,14 +1,7 @@
-.backGroundImage{
-    background: 
-    linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-        ),   
-    url(../Assets/team-of-scouts-rowing-jpg.jpg);
+.backGroundImage {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Assets/team-of-scouts-rowing-jpg.jpg);
     background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 75vh;
-
-   
 }
