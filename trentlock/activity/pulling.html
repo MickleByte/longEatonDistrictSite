@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- Developed For Long Eaton Scout District -->
+<!-- By Matthew Micklewright -->
+<!-- Last Updated Feb 2021 -->
+<html lang="en-GB">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <!--Get Font 'Nunito Sans'-->
+    <link rel="stylesheet" type="text/css" href="../../CSS/siteWideStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/trentlock-activities.css">
+    <link rel='icon' href='../../Assets/favicon.ico' type='image/x-icon' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- <meta name="google-site-verification" content=""/>     -->
+    <meta name="keywords" content="Long Eaton, Long Eaton District, Scouts, Explorers, Network, Beavers, Cubs, Long Eaton District Scouts, Sawley, Breaston, Sandiacre">
+    <meta name="robots" content="index, follow">
+    <title>Activities</title>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header class="header">
+                <a href="../../index.html">
+                    <img width="250" alt="Scouts Logo" src="../../Assets/LELogo.gif" id="logoImage" />
+                </a>
+                <input type="image" src="../../Assets/BurgerMenuPurple.svg" id="BurgerMenuButton" onclick="displayMenu()" />
+                <br>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <a href="../../index.html" class="purple menuItem">Home</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="../../events.html" class="purple menuItem">Events</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="../../join.html" class="purple menuItem">Join</a></button>
+                        <div class="dropdown-content">
+                            <a class="black" href="../../beavers.html">Beavers</a>
+                            <a class="black" href="../../cubs.html">Cubs</a>
+                            <a class="black" href="../../scouts.html">Scouts</a>
+                            <a class="black" href="../../explorers.html">Explorers</a>
+                            <a class="black" href="../../network.html">Network</a>
+                            <a class="black" href="../../volunteer.html">Volunteers</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="../../contact.html" class="purple menuItem">Contact</a>
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="../about" class="purple menuItem">Trent Lock</a></button>
+                        <div class="dropdown-content">
+                            <a class="black" href="../about">About</a>
+                            <a class="black" href="../activities">Activities</a>
+                            <a class="black" href="../book">Book</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <script type="text/javascript">
+                function displayMenu() {
+                    var items = document.getElementsByClassName("navbar");
+                    for (i = 0; i < items.length; i++) {
+                        if (items[i].style.display === "block") {
+                            items[i].style.display = "none";
+                        } else {
+                            items[i].style.display = "block";
+                        }
+                    }
+                }
+            </script>
+
+            <section class="colouredSectionWhite">
+                <h1 class="pageTitle">Pulling</h1>
+            </section>
+
+
+
+            <section id="gallery">
+                <div class="paraWithTitle">
+                    <p class="black">
+
+                    </p>
+                </div>
+            </section>
+
+
+
+
+        </div>
+
+
+        <footer id="footer" class="footer">
+            <div class="footerTop">
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/LEScouts/" class="socialMediaLink">
+                        <img src="../../Assets/facebook.svg" />
+                    </a>
+                    <a href="https://www.youtube.com/user/UKScoutAssociation" class="socialMediaLink">
+                        <img src="../../Assets/youtube.svg" />
+                    </a>
+                    <a href="https://www.instagram.com/scouts/" class="socialMediaLink">
+                        <img src="../../Assets/instagram.svg" />
+                    </a>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <img width="110" height="80" class="logo" alt="Scouts Logo" style="float: center" src="../../Assets/Scouts_Logo_Stack_White.png" />
+                <br>
+                <section id="footerLinks">
+                    <div id="contactFooter">
+                        <p class="white">
+                            <p class="white">To speak to the district team:</p>
+                            <ul>
+                                <li class="white"><a class="white" href="mailto:secretary@longeatonscouts.org.uk">Email:</a> secretary@
+                                    <wbr>longeatonscouts.org.uk</li>
+
+                            </ul>
+                        </p>
+                        <p>
+                            <a href="../../privacy.html" class="white">Privacy Policy</a>
+                        </p>
+
+                    </div>
+                    <div id="websitesFooter">
+                        <p class="white">Some Handy Links:</p>
+                        <a class="white" href="https://www.scouts.org.uk/">National Scouts</a> <br>
+                        <a class="white" href="derbyshirescouts.org">Derbyshire Scouts</a><br>
+                        <a class="white" href="https://www.drumhill.org.uk/">Drum Hill Campsite</a><br>
+                        <a class="white" href="http://www.trentlock.org/">Trent Lock Activity Centre</a><br>
+                        <a class="white" href="https://shop.scouts.org.uk/">Scout Store</a>
+                    </div>
+                </section>
+                <br>
+                <div id="safeguarding">
+                    <p class="white">If you have safeguarding concerns, contact Scouting's safeguarding team:
+                        <a href="mailto:safeguarding@scouts.org.uk" class="white">
+                            safeguarding@scouts.org.uk
+                        </a>
+                    </p>
+                    <br>
+                    <a href="https://www.ceop.police.uk/safety-centre/"><img style="height: 50px; width: 144px;" src="../../Assets/CEOP.png" /></a>
+                    <br>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>
