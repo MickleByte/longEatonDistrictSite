@@ -1,0 +1,19 @@
+.pricingTable {
+    padding-left: 15px;
+}
+
+
+/* @media only screen and (max-width: 768px) { */
+
+table {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 98%;
+}
+
+@media only screen and (min-width: 768px) {
+    .pricingTable .pricingTableHeader {
+        padding-left: 15px;
+        width: 90%;
+    }
+}

@@ -1,56 +1,35 @@
-
-.bigSubtitle{
+.bigSubtitle {
     font-size: xx-large;
     font-weight: normal;
 }
 
-.subtitle{
+.subtitle {
     font-weight: bold;
     font-size: x-large;
 }
 
-table {
-    margin-left:auto; 
-    margin-right:auto;
-    border-collapse: collapse;
-    width: 90%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
-.theadDark{
-    background-color: var(--scoutDarkGrey);
-    color: var(--scoutWhite);
-}
 
 /* For desktop: */
+
 @media only screen and (min-width: 768px) {
-    #privacyText{
+    #privacyText {
         width: 75%;
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
     }
-
-    .subtitle, .bigSubtitle{
-        padding-left:15px;
+    .subtitle,
+    .bigSubtitle {
+        padding-left: 15px;
     }
 }
 
+
 /* For mobile phones: */
+
 @media only screen and (max-width: 768px) {
-    #privacyText{
+    #privacyText {
         width: 100%;
         padding-right: 5px;
         padding-left: 5px;
     }
-
-    
 }

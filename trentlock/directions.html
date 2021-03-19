@@ -6,16 +6,17 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Get Font 'Nunito Sans'-->
     <link rel="stylesheet" type="text/css" href="../CSS/siteWideStyle.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/trentlock-activities.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/trentLock.css">
     <link rel='icon' href='../Assets/favicon.ico' type='image/x-icon' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <!-- <meta name="google-site-verification" content=""/>     -->
     <meta name="keywords" content="Long Eaton, Long Eaton District, Scouts, Explorers, Network, Beavers, Cubs, Long Eaton District Scouts, Sawley, Breaston, Sandiacre">
     <meta name="robots" content="index, follow">
-    <title>Activities</title>
+    <title>Directions</title>
 </head>
 
 <body>
@@ -75,94 +76,31 @@
             </script>
 
             <section class="colouredSectionWhite">
-                <h1 class="pageTitle">Activities</h1>
+                <h1 class="pageTitle">How to find us</h1>
             </section>
 
+            <section>
+                <div id="map"></div>
+                <script src="../JS/map.js"></script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4UWX6vUm7l4k6po5zoEmSTHZu_4ysyL8&libraries=places&callback=trentLockMap">
+                </script>
 
-            <section class="adaptiveCardsSection">
-                <div class="activityCardWrapper">
-                    <div class="activityCard">
-                        <img class="activityCardImage" src="" />
-                        <a href="./activity/archery">
-                            <button class="button largeButton activityCardBtn">Archery</button>
-                        </a>
+                <section>
+                    <div class="paraWithTitle">
+                        <p class="black">
+                            The campsite is near J24 of the M1, take the B6540 towards Long Eaton and then follow the brown 'Trent Lock' signs down Lock Lane. At the end of the lane is a free car park.
+                        </p>
+                        <p class="black">
+                            To get to the campsite from the car park head past the pub and up onto the flood bank, you'll see the activity centre on the other side of the river. Turn right and head along the river to the concrete pontoon where you'll be picked up by our ferry boat
+                        </p>
+                        <p>
+                            <a class="black inText" href="../Assets/TLSAC Direction of how to find us.pdf">Directions to Print</a>
+                        </p>
+
                     </div>
-                    <div class="activityCard">
-                        <img class="activityCardImage" src="" />
-                        <a href="./activity/sailing">
-                            <button class="button largeButton activityCardBtn">Dinghy Sailing</button>
-                        </a>
-                    </div>
-                    <div class="activityCard">
-                        <img class="activityCardImage" src="../Assets/firelighting-with-steve-backshall-jpg.jpg" />
-                        <a href="./activity/firelighting">
-                            <button class="button largeButton activityCardBtn">Firelighting</button>
-                        </a>
-                    </div>
-                    <div class="activityCard">
-                        <img class="activityCardImage" src="../Assets/male-female-explorers-map-reading-2-jpg.jpg" />
-                        <a href="./activity/orienteering">
-                            <button class="button largeButton activityCardBtn">Orienteering</button>
-                        </a>
-                    </div>
-                    <div class="activityCard">
-                        <img class="activityCardImage" src="../Assets/kayaking-jpg.jpg" />
-                        <a href="./activity/paddlesport">
-                            <button class="button largeButton activityCardBtn">Paddlesports</button>
-                        </a>
-                    </div>
-                    <div class="activityCard">
-                        <img class="activityCardImage" src="../Assets/group-of-cubs-on-raft-jpg.jpg" />
-                        <a href="./activity/pioneering">
-                            <button class="button largeButton activityCardBtn">Pioneering & Rafting</button>
-                        </a>
-                    </div>
-                    <div class="activityCard">
-                        <img class="activityCardImage" src="" />
-                        <a href="./activity/ponddipping">
-                            <button class="button largeButton activityCardBtn">Pond Dipping</button>
-                        </a>
-                    </div>
-                    <div class="activityCard">
-                        <img class="activityCardImage" src="" />
-                        <a href="./activity/powerboating">
-                            <button class="button largeButton activityCardBtn">Powerboating</button>
-                        </a>
-                    </div>
-                    <div class="activityCard">
-                        <img class="activityCardImage" src="../Assets/scouts-rowing-with-helen-glover-2-jpg.jpg" />
-                        <a href="./activity/pulling">
-                            <button class="button largeButton activityCardBtn">Pulling</button>
-                        </a>
-                    </div>
-                </div>
+
+                </section>
             </section>
-
-            <section id="gallery">
-                <div class="paraWithTitle">
-                    <h2 class="black">Trent Lock</h2>
-                    <p class="black">
-                        Trent Lock activity center is on the banks of the River Trent where people of all ages take part in a range of activites both on and off the water. Trent Lock is dedicated to giving young people an opportunity to experience canoeing, sailing, raft building
-                        and other activities with plenty of fun thrown in!
-                    </p>
-                </div>
-                <div class="paraWithTitle">
-                    <h2 class="black">Another</h2>
-                    <p class="black">
-                        Trent Lock activity center is on the banks of the River Trent where people of all ages take part in a range of activites both on and off the water. Trent Lock is dedicated to giving young people an opportunity to experience canoeing, sailing, raft building
-                        and other activities with plenty of fun thrown in!
-                    </p>
-                </div>
-                <div class="paraWithTitle">
-                    <h2 class="black">Another</h2>
-                    <p class="black">
-                        Trent Lock activity center is on the banks of the River Trent where people of all ages take part in a range of activites both on and off the water. Trent Lock is dedicated to giving young people an opportunity to experience canoeing, sailing, raft building
-                        and other activities with plenty of fun thrown in!
-                    </p>
-                </div>
-            </section>
-
-
 
 
         </div>
