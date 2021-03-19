@@ -1,0 +1,31 @@
+#map {
+    height: 50vh;
+    width: 100%;
+}
+
+.colouredSectionWhitePurple {
+    background-color: #7413DC;
+    /* default supported fallback style */
+    color: var(--scoutPurple);
+}
+
+.colouredSectionWhite {
+    background-color: #FFFFFF;
+    /* default supported fallback style */
+    background-color: var(--scoutWhite);
+}
+
+#calendar {
+    width: 100%;
+    height: 50vh;
+}
+
+.paraWithTitle {
+    padding-left: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .paraWithTitle h2 {
+        padding-left: 15px;
+    }
+}
