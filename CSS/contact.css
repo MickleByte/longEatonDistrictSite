@@ -1,60 +1,56 @@
 @import url("colours.css");
-
-
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-#whosWhoWrapper{
-  padding-top: 10px;
-  display: block;
+#whosWhoWrapper {
+    padding-top: 10px;
+    display: block;
 }
 
 .column {
-  width: 100%;
-  display: block;
-  padding: 0 8px;
+    width: 100%;
+    display: block;
+    padding: 0 8px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container p, .container h2{
-  padding-left: 1px;
+.container p,
+.container h2 {
+    padding-left: 1px;
 }
 
 .jobTitle {
-  color: var(--scoutDarkGrey);
+    color: var(--scoutDarkGrey);
 }
 
-.clear { 
-  clear:both; 
+.clear {
+    clear: both;
 }
+
 
 /* Big mobile */
-@media only screen and (min-width: 480px) {
-  .column {
-    float: left;
-    width: 50%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-}
 
+@media only screen and (min-width: 480px) {
+    .column {
+        float: left;
+        width: 50%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+}
 
 
 /* Large Desktop */
-@media only screen and (min-width: 1024px) {
-  .column {
-    float: left;
-    width: 25%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-}
 
+@media only screen and (min-width: 1024px) {
+    .column {
+        float: left;
+        width: 25%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+}

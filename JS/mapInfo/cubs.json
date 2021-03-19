@@ -1,7 +1,6 @@
 {
     "type": "FeatureCollection",
-    "features": [
-        {
+    "features": [{
             "geometry": {
                 "type": "Point",
                 "coordinates": [-1.2889443,
@@ -46,11 +45,11 @@
                 "phone": "adccubs@longeatonscouts.org.uk"
             }
         },
-     
+
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [ -1.346195,
+                "coordinates": [-1.346195,
                     52.894941
                 ]
             },
@@ -95,8 +94,8 @@
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-1.302319,
-                    52.8834531
+                "coordinates": [-1.294803,
+                    52.890584
                 ]
             },
             "type": "Feature",

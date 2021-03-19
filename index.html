@@ -9,6 +9,7 @@
     <!--Get Font 'Nunito Sans'-->
     <link rel="stylesheet" type="text/css" href="CSS/siteWideStyle.css">
     <link rel="stylesheet" type="text/css" href="CSS/homePage.css">
+
     <link rel='icon' href='Assets/favicon.ico' type='image/x-icon' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -23,7 +24,9 @@
         <div id="content-wrap">
             <header class="header">
                 <a href="index.html">
-                    <img width="250" alt="Scouts Logo" src="Assets/LELogo.gif" id="logoImage" />
+
+                    <img alt="Scouts Logo" src="Assets/LELogo.gif" id="logoImage" />
+
                 </a>
                 <input type="image" src="Assets/BurgerMenuPurple.svg" id="BurgerMenuButton" onclick="displayMenu()" />
                 <br>
@@ -61,6 +64,7 @@
                 </div>
             </header>
 
+
             <script type="text/javascript">
                 function displayMenu() {
                     var items = document.getElementsByClassName("navbar");
@@ -71,6 +75,12 @@
                             items[i].style.display = "block";
                         }
                     }
+                }
+            </script>
+
+            <script type="text/javascript">
+                function myFunc() {
+                    alert("Hello World");
                 }
             </script>
 
@@ -213,10 +223,10 @@
                     </div>
                     <div id="websitesFooter">
                         <p class="white">Some Handy Links:</p>
-                        <a class="white" href="https://www.scouts.org.uk/">National Scouts</a> <br>
+                        <a class="white" href="https://www.scouts.org.uk/">The Scouts</a> <br>
                         <a class="white" href="https://www.derbyshirescouts.org/">Derbyshire Scouts</a><br>
-                        <a class="white" href="https://www.drumhill.org.uk/">Drum Hill Campsite</a><br>
-                        <a class="white" href="http://www.trentlock.org/">Trent Lock Activity Centre</a><br>
+                        <a class="white" href="https://www.drumhill.org.uk/">Drum Hill Scout Campsite</a><br>
+                        <a class="white" href="http://www.trentlock.org/">Trent Lock Scout Activity Centre</a><br>
                         <a class="white" href="https://shop.scouts.org.uk/">Scout Store</a>
                     </div>
                 </section>
@@ -235,7 +245,7 @@
         </footer>
 
     </div>
-</body>
 
+</body>
 
 </html>
