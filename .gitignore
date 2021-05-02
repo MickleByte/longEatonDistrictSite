@@ -2,4 +2,5 @@
 package-lock.json
 package.json
 .ftp*
+./vscode
 debug.log
