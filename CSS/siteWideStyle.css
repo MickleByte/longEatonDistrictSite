@@ -74,6 +74,11 @@ a {
     font-weight: normal;
 }
 
+.dropdownAgeRanges {
+    font-weight: normal;
+    float: right;
+}
+
 .header {
     background-color: white;
     /* default supported fallback style */
