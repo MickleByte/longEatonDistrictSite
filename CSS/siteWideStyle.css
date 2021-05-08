@@ -500,6 +500,14 @@ a.white:hover {
     padding-right: 10px;
 }
 
+.downloadLink {
+    text-decoration: underline;
+}
+
+.downloadLink:hover {
+    text-decoration: none;
+}
+
 
 /* For mobile phones: */
 
