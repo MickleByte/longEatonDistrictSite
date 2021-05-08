@@ -194,6 +194,10 @@ section {
         display: block;
         text-align: left;
     }
+    .dropdownAgeRanges {
+        padding-left: 20px;
+        float: none;
+    }
 }
 
 
