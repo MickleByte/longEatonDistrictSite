@@ -502,6 +502,14 @@ a.white:hover {
 
 .downloadLink {
     text-decoration: underline;
+    background-image: url(../Assets/downloadIconWhite.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+}
+
+.downloadLink.black {
+    background-image: url(../Assets/downloadIconPurple.svg);
 }
 
 .downloadLink:hover {
