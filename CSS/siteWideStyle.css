@@ -232,7 +232,7 @@ section {
     .navbar {
         padding-left: 15px;
         overflow: hidden;
-        background-color: #7413DC;
+        background-color: #FFFFFF;
         /* default fallback style (for IE) */
         background-color: var(--scoutWhite);
     }
@@ -254,7 +254,7 @@ section {
         text-decoration: none;
         border: none;
         font-size: medium;
-        background-color: '#FFFFFF';
+        background-color: #FFFFFF;
         /* default supported fallback style */
         background-color: var(--scoutWhite);
     }
@@ -504,6 +504,8 @@ a.white:hover {
     text-decoration: underline;
     background-image: url(../Assets/downloadIconWhite.svg);
     background-position: center left;
+    width: auto;
+    height: auto;
     background-repeat: no-repeat;
     padding-left: 35px;
 }

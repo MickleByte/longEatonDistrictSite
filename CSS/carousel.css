@@ -16,6 +16,8 @@
     background-color: #7413DC;
     /* default supported fallback style */
     background-color: var(--scoutPurple);
+    color: #FFFFFF;
+    /* default supported fallback style */
     color: var(--scoutWhite);
     font-size: xx-large;
 }
