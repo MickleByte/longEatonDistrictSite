@@ -28,6 +28,8 @@
 
 #tableOfMeetings a {
     text-decoration: underline;
+    color: #000000;
+    /* default supported fallback style */
     color: var(--scoutBlack);
 }
 

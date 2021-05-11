@@ -13,12 +13,16 @@
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+    background-color: #7413DC;
+    /* default supported fallback style */
     background-color: var(--scoutPurple);
     color: var(--scoutWhite);
     font-size: xx-large;
 }
 
 .carouselBtn:hover {
+    background-color: #707070;
+    /* default supported fallback style */
     background-color: var(--scoutDarkGrey);
 }
 

@@ -48,6 +48,8 @@
 }
 
 .close {
+    color: #FFFFFF;
+    /* default supported fallback style */
     color: var(--scoutWhite);
     float: right;
     font-size: 28px;
@@ -56,6 +58,8 @@
 
 .close:hover,
 .close:focus {
+    color: #707070;
+    /* default supported fallback style */
     color: var(--scoutDarkGrey);
     text-decoration: none;
     cursor: pointer;
@@ -63,7 +67,11 @@
 
 .modal-header {
     padding: 2px 16px;
+    background-color: #7413DC;
+    /* default supported fallback style */
     background-color: var(--scoutPurple);
+    color: #FFFFFF;
+    /* default supported fallback style */
     color: var(--scoutWhite);
 }
 
