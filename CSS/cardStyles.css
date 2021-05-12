@@ -1,0 +1,37 @@
+.cardWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+    max-width: 960px;
+    margin: 0 auto 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.cardImage {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardBtn {
+    margin-bottom: 10px;
+}
+
+.cardTextContent {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .paraWithTitle {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+}
+
+.card.noShadow {
+    box-shadow: none;
+}

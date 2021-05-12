@@ -10,6 +10,10 @@ body {
     text-align: center;
 }
 
+b {
+    font-weight: bold;
+}
+
 .backGroundImage {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Assets/scouts-on-raft-jpg.jpg);
     background-size: cover;
@@ -68,6 +72,11 @@ a {
 * {
     font-family: "Nunito Sans", sans-serif;
     font-weight: normal;
+}
+
+.dropdownAgeRanges {
+    font-weight: normal;
+    float: right;
 }
 
 .header {
@@ -185,6 +194,10 @@ section {
         display: block;
         text-align: left;
     }
+    .dropdownAgeRanges {
+        padding-left: 20px;
+        float: none;
+    }
 }
 
 
@@ -219,7 +232,7 @@ section {
     .navbar {
         padding-left: 15px;
         overflow: hidden;
-        background-color: #7413DC;
+        background-color: #FFFFFF;
         /* default fallback style (for IE) */
         background-color: var(--scoutWhite);
     }
@@ -241,7 +254,7 @@ section {
         text-decoration: none;
         border: none;
         font-size: medium;
-        background-color: '#FFFFFF';
+        background-color: #FFFFFF;
         /* default supported fallback style */
         background-color: var(--scoutWhite);
     }
@@ -485,6 +498,32 @@ a.white:hover {
 .plus {
     float: right;
     padding-right: 10px;
+}
+
+.downloadLink {
+    text-decoration: underline;
+    background-image: url(../Assets/downloadIconWhite.svg);
+    background-position: center left;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+}
+
+.downloadLink.black {
+    background-image: url(../Assets/downloadIconPurple.svg);
+}
+
+.downloadLink:hover {
+    text-decoration: none;
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .downloadLink {
+        background-image: none !important;
+        padding-left: 0px !important;
+    }
 }
 
 

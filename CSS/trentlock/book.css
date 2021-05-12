@@ -1,0 +1,12 @@
+.pricingTable {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    .bookingPageTables {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
