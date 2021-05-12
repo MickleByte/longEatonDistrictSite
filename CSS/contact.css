@@ -24,6 +24,8 @@ html {
 }
 
 .jobTitle {
+    color: #707070;
+    /* default supported fallback style */
     color: var(--scoutDarkGrey);
 }
 
