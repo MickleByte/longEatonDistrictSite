@@ -12,4 +12,4 @@ jobs:
       with:
         enabled-static-website: 'true'
         folder: '$web'
-        connection-string: ${{ secrets.CONNECTION_STRING }}
+        connection-string: ${{ secrets.AZCONNECT }}
