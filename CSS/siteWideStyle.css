@@ -521,8 +521,8 @@ a.white:hover {
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
     .downloadLink {
-        background-image: none;
-        padding-left: 0px;
+        background-image: none !important;
+        padding-left: 0px !important;
     }
 }
 
