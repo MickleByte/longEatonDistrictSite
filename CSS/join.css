@@ -11,21 +11,6 @@
     margin-right: auto;
 }
 
-.SectionBlock {
-    background-color: #7413DC;
-    /* default supported fallback style */
-    background-color: var(--scoutPurple);
-}
-
-#sectionList {
-    background-color: #7413DC;
-    /* default supported fallback style */
-    background-color: var(--scoutPurple);
-    text-align: center;
-    overflow: auto;
-    padding-bottom: 10px;
-}
-
 #tableOfMeetings a {
     text-decoration: underline;
     color: #000000;
@@ -43,27 +28,4 @@
 
 .imageTextBig {
     padding-top: 30%;
-}
-
-
-/* For desktop: */
-
-@media only screen and (min-width: 768px) {
-    .SectionBlock {
-        width: 20%;
-        height: 25%;
-        float: left;
-    }
-}
-
-
-/* For mobile phones: */
-
-@media only screen and (max-width: 768px) {
-    .SectionBlock {
-        width: 50%;
-        float: center;
-        margin: auto;
-        margin-bottom: 30px;
-    }
 }
