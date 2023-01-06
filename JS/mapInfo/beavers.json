@@ -9,7 +9,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Mondays 5:30pm - 6:30pm & Thursdays 6pm - 7:15pm",
+                "hours": "Monday & Thursday",
                 "location": "3rd Sandiacre Scout Hut",
                 "name": "3rd Sandiacre",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
@@ -24,7 +24,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Tuesday 5:30pm - 6:45pm",
+                "hours": "Tuesday",
                 "location": "St Johns on College street",
                 "name": "3rd Long Eaton",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
@@ -39,7 +39,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Tuesday 6pm - 7:15pm",
+                "hours": "Tuesday",
                 "location": "Sea Scout hut on Tamworth Rd",
                 "name": "15th Long Eaton",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
@@ -54,7 +54,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Tuesday 6pm - 7:15pm & Wednesdays 6:15pm - 7:30pm",
+                "hours": "Tuesday & Wednesday",
                 "location": "Sea Scout hut on Tamworth Rd",
                 "name": "15th Long Eaton",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
@@ -69,7 +69,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Tuesday 6pm - 7:15pm",
+                "hours": "Tuesday",
                 "location": "Garfield Avenue, Draycott, DE72 3NP",
                 "name": "1st Draycott and Wilne",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
@@ -114,7 +114,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Wednesdays 6:30pm - 7:45pm",
+                "hours": "Wednesday",
                 "location": "Behind the chip show on Beresford Rd",
                 "name": "1st Sawley",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
@@ -129,7 +129,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Thursdays 6pm - 7:15pm",
+                "hours": "Thursday",
                 "location": "Scout HQ, Blind Lane, DE72 3DW",
                 "name": "1st Breaston",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
@@ -144,7 +144,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Thursdays 6pm - 7:15pm",
+                "hours": "Thursdays",
                 "location": "Dovedale School",
                 "name": "1st Sawley",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
@@ -159,7 +159,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Thursdays 5:45pm - 6:45pm",
+                "hours": "Thursdays",
                 "location": "Station Rd",
                 "name": "16th Long Eaton",
                 "phone": "adcbeavers@longeatonscouts.org.uk"

@@ -9,7 +9,7 @@
         },
         "type": "Feature",
         "properties": {
-            "hours": "Monday 7:30-9pm",
+            "hours": "Monday",
             "location": "Sea Scout Hut on Tamworth Rd",
             "name": "Long Eaton Network",
             "phone": "network@longeatonscouts.org.uk"
