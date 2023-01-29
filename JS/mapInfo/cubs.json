@@ -94,28 +94,13 @@
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-1.294803,
-                    52.890584
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "hours": "Thursday",
-                "location": "Dovedale Primary School, Dovedale Avenue",
-                "name": "1st Sawley (Dovedale)",
-                "phone": "adccubs@longeatonscouts.org.uk"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
                 "coordinates": [-1.302319,
                     52.8834531
                 ]
             },
             "type": "Feature",
             "properties": {
-                "hours": "Thursday",
+                "hours": "Wednesday & Thursday",
                 "location": "Scout Hut Behind Chip Shop on Beresford Rd, Sawley",
                 "name": "1st Sawley (Beresford Rd)",
                 "phone": "adccubs@longeatonscouts.org.uk"
@@ -145,7 +130,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Thursday",
+                "hours": "Friday",
                 "location": "Baptist Church, Station Rd",
                 "name": "16th Long Eaton",
                 "phone": "adccubs@longeatonscouts.org.uk"
