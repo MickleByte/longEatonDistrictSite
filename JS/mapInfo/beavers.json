@@ -54,7 +54,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Tuesday & Wednesday",
+                "hours": "Wednesday",
                 "location": "Sea Scout hut on Tamworth Rd",
                 "name": "15th Long Eaton",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
@@ -99,7 +99,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "",
+                "hours": "Wednesday",
                 "location": "At the back of St Francis Chruch, Tamworth Rd",
                 "name": "17th Long Eaton",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
@@ -114,7 +114,7 @@
             },
             "type": "Feature",
             "properties": {
-                "hours": "Wednesday",
+                "hours": "Tuesday & Wednesday",
                 "location": "Behind the chip show on Beresford Rd",
                 "name": "1st Sawley",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
@@ -138,28 +138,13 @@
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-1.2951395,
-                    52.890646
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "hours": "Thursdays",
-                "location": "Dovedale School",
-                "name": "1st Sawley",
-                "phone": "adcbeavers@longeatonscouts.org.uk"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
                 "coordinates": [-1.2608114,
                     52.8979476
                 ]
             },
             "type": "Feature",
             "properties": {
-                "hours": "Thursdays",
+                "hours": "Friday",
                 "location": "Station Rd",
                 "name": "16th Long Eaton",
                 "phone": "adcbeavers@longeatonscouts.org.uk"
