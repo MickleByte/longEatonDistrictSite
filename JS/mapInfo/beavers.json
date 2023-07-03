@@ -78,21 +78,6 @@
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-1.2850348,
-                    52.9012088
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "hours": "",
-                "location": "Only available for pupils of school",
-                "name": "1st Trent College",
-                "phone": "adcbeavers@longeatonscouts.org.uk"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
                 "coordinates": [-1.277372,
                     52.891568
                 ]
